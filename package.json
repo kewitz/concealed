@@ -1,0 +1,34 @@
+{
+  "name": "concealed",
+  "version": "0.0.1",
+  "description": "Tired of Lorem Ipsum? Use dummy text blocks.",
+  "main": "concealed.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "eslint conceal.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kewitz/concealed.git"
+  },
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "concealed",
+    "dummy",
+    "text",
+    "generator"
+  ],
+  "author": "Leonardo Kewitz <leokewitz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kewitz/concealed/issues"
+  },
+  "homepage": "https://github.com/kewitz/concealed#readme",
+  "devDependencies": {
+    "@invisible/eslint-config": "^1.1.7",
+    "eslint": "^4.10.0"
+  }
+}

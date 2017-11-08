@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concealed.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Tired of Lorem Ipsum? Use dummy text blocks.">
+    <meta name="author" content="Leonardo Kewitz">
+    <meta name="keywords" content="Leonardo Kewitz, Software Engineer, JavaScript">
+    <meta property="og:description" content="Tired of Lorem Ipsum? Use dummy text blocks.">
+    <meta property="og:title" content="Concealed.js">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="concealed.js"></script>
+    <!-- Highlight.JS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <h1 data-conceal="2"></h1>
+        <div class="summary" data-conceal="10"></div>
+      </div>
+    </header>
+
+    <section>
+      <div class="content">
+        <h1 data-conceal="3"></h1>
+        <div class="summary" data-conceal="15"></div>
+        <pre><code class="html">&lt;head&gt;
+  ...
+  &lt;script src="concealed.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+  &lt;h1 data-conceal="3"&gt;&lt;/h1&gt;
+  &lt;div class="summary" data-conceal="15"&gt;&lt;/div&gt;
+  ...
+  &lt;script&gt;
+    Conceal()
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        <div class="summary" data-conceal="15"></div>
+        <pre><code class="js">import conceal from "concealed";
+import React from "react";
+import ReactDOM from "react-dom";
+
+const App = () =&gt; (
+  &lt;div&gt;
+    &lt;div className="content"&gt;
+      &lt;h1 data-conceal="2" /&gt;
+    &lt;/div&gt;
+    &lt;div className="content"&gt;
+      &lt;h2 data-conceal="4" /&gt;
+      &lt;div className="summary" data-conceal="50" /&gt;
+    &lt;/div&gt;
+    &lt;div className="content"&gt;
+      &lt;h2 data-conceal="3" /&gt;
+      &lt;div className="summary" data-conceal="30" /&gt;
+    &lt;/div&gt;
+    &lt;div className="content"&gt;
+      &lt;h2 data-conceal="2" /&gt;
+      &lt;div className="summary" data-conceal="20" /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+);
+
+ReactDOM.render(&lt;App /&gt;, document.body);
+
+conceal();</code></pre>
+      </div>
+    </section>
+
+  <script>
+    Conceal()
+  </script>
+  </body>
+</html>

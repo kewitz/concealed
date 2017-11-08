@@ -1,0 +1,63 @@
+@import 'normalize.css';
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #FFF;
+  color: #66BFBF;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+header,
+section {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header div,
+section div {
+  margin: 0.67em 0;
+}
+
+header {
+  color: #000;
+  min-height: 60vh;
+  font-size: 1.8rem;
+  background: linear-gradient(to left top, #66BFBF, #EAF6F6);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+}
+
+pre {
+  margin: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  header .summary {
+    width: 50%;
+  }
+
+  .content {
+    width: 50vw;
+  }
+}

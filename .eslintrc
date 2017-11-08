@@ -1,0 +1,12 @@
+{
+  "extends": ["@invisible"],
+  "globals": {
+    "define": true,
+    "document": true,
+    "self": true,
+    "window": true
+  },
+  "rules": {
+    "no-restricted-globals": 0
+  }
+}
