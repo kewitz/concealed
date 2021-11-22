@@ -1,6 +1,6 @@
 {
   "name": "concealed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tired of Lorem Ipsum? Use dummy text blocks.",
   "main": "concealed.js",
   "directories": {
@@ -26,9 +26,5 @@
   "bugs": {
     "url": "https://github.com/kewitz/concealed/issues"
   },
-  "homepage": "https://github.com/kewitz/concealed#readme",
-  "devDependencies": {
-    "@invisible/eslint-config": "^1.1.7",
-    "eslint": "^4.10.0"
-  }
+  "homepage": "https://github.com/kewitz/concealed#readme"
 }
